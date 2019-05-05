@@ -739,6 +739,11 @@ bser@^2.0.0:
   dependencies:
     node-int64 "^0.4.0"
 
+bson@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/bson/-/bson-1.1.1.tgz#4330f5e99104c4e751e7351859e2d408279f2f13"
+  integrity sha512-jCGVYLoYMHDkOsbwJZBCqwMHyH4c+wzgI9hG7Z6SZJRXWr+x58pdIbm2i9a/jFGCkRJqRUr8eoI7lDWa0hTkxg==
+
 bson@~1.0.4:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/bson/-/bson-1.0.9.tgz#12319f8323b1254739b7c6bef8d3e89ae05a2f57"
@@ -3090,14 +3095,6 @@ mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
-mongodb-core@3.0.9:
-  version "3.0.9"
-  resolved "https://registry.yarnpkg.com/mongodb-core/-/mongodb-core-3.0.9.tgz#8327410c88811013fb3e4ac7c4c670f324349be1"
-  integrity sha512-buOWjdLLBlEqjHDeHYSXqXx173wHMVp7bafhdHxSjxWdB9V6Ri4myTqxjYZwL/eGFZxvd8oRQSuhwuIDbaaB+g==
-  dependencies:
-    bson "~1.0.4"
-    require_optional "^1.0.1"
-
 mongodb-core@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/mongodb-core/-/mongodb-core-3.1.0.tgz#af91f36fd560ed785f4e61e694432df4d3698aad"
@@ -3108,12 +3105,16 @@ mongodb-core@3.1.0:
   optionalDependencies:
     saslprep "^1.0.0"
 
-mongodb@3.0.10:
-  version "3.0.10"
-  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-3.0.10.tgz#f948cb9595adcbfcad7444f6b24a040b653b23e8"
-  integrity sha512-jy9s4FgcM4rl8sHNETYHGeWcuRh9AlwQCUuMiTj041t/HD02HwyFgmm2VZdd9/mA9YNHaUJLqj0tzBx2QFivtg==
+mongodb-core@^3.2.3:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/mongodb-core/-/mongodb-core-3.2.3.tgz#eb9bcb876f169f5843fd135f7f7686dbac0e9e34"
+  integrity sha512-UyI0rmvPPkjOJV8XGWa9VCTq7R4hBVipimhnAXeSXnuAPjuTqbyfA5Ec9RcYJ1Hhu+ISnc8bJ1KfGZd4ZkYARQ==
   dependencies:
-    mongodb-core "3.0.9"
+    bson "^1.1.1"
+    require_optional "^1.0.1"
+    safe-buffer "^5.1.2"
+  optionalDependencies:
+    saslprep "^1.0.0"
 
 mongodb@3.1.0:
   version "3.1.0"
@@ -3121,6 +3122,14 @@ mongodb@3.1.0:
   integrity sha512-fSDZRq9FomRqeDSM7MpMTLa8sz+STs3nZ7Ib0+xvmaKZ6nquNDN4zGDsVhjto6UozFvHMDYJMAfJwhqUygXs9g==
   dependencies:
     mongodb-core "3.1.0"
+
+mongodb@3.2.3:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-3.2.3.tgz#4610ee33d300caa74329c2dd03e137210723cd91"
+  integrity sha512-jw8UyPsq4QleZ9z+t/pIVy3L++51vKdaJ2Q/XXeYxk/3cnKioAH8H6f5tkkDivrQL4PUgUOHe9uZzkpRFH1XtQ==
+  dependencies:
+    mongodb-core "^3.2.3"
+    safe-buffer "^5.1.2"
 
 ms@2.0.0:
   version "2.0.0"
