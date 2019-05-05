@@ -32,7 +32,7 @@
     "babel-eslint": "8.2.5",
     "eslint": "5.0.1",
     "jest": "23.2.0",
-    "request": "2.87.0"
+    "request": "2.88.0"
   },
   "dependencies": {
     "body-parser": "1.18.3",
