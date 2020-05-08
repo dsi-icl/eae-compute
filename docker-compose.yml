@@ -11,7 +11,7 @@ services:
             - 27017:27017
 
     swift:
-        image: bouncestorage/swift-aio:latest@sha256:6ecee031ec8fa152bcdf78d3b1a0027d314ef2df56c78d26e9d2e6a40dde28dd
+        image: bouncestorage/swift-aio:latest@sha256:2664057b9be22ff8724de030aa62693d5136d66c85175f0901a7b34235540116
         ports:
             - 8080:8080
 
